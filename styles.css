@@ -1,0 +1,132 @@
+body {
+    background-color: black;
+    display: flex;
+justify-content: center;
+align-items: center;
+  flex-direction: column;
+  margin:0;
+padding:0;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+
+.orbit {  
+  padding: 25px;  
+  border-color: grey;
+  border-width: 2px;
+  border-style: dashed;
+  border-radius: 50%;
+  position: relative;
+  animation-name: rotation;
+  animation-duration: 125s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+ }
+
+.orbit:hover {
+   animation-play-state: paused;
+}
+
+.solar {
+  width: 800px; 
+  height: 800px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.planet {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+.orbit--8 {
+  transform: rotate(35deg);
+   animation-duration: 50s;
+}
+
+.orbit--7 {
+  transform: rotate(190deg); 
+   animation-duration: 80s;
+}
+
+.orbit--6 {
+ transform: rotate(45deg); 
+  animation-duration: 124s; 
+}
+
+.orbit--5 {
+  transform: rotate(65deg);
+   animation-duration: 210s;
+  
+}
+
+.orbit--4 {
+ transform: rotate(135deg);
+   animation-duration: 430s;
+}
+
+.orbit--3 {
+ transform: rotate(95deg);
+   animation-duration: 250s;
+}
+
+.orbit--2 {
+ transform: rotate(45deg);
+   animation-duration: 300s;
+}
+
+.orbit--1 {
+ transform: rotate(15deg);
+   animation-duration: 200s;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color:gray;
+  padding: 40px;
+  width: 300px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.card-name {
+  font-size: 24px;
+}
+
+.x {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: transparent;
+  box-shadow: 0;
+  border: none; 
+}
+
+
+@keyframes rotation {
+
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+    .planet { width: 30px !important; }
+    .planet[data-planet="saturn"] { width: 70px !important; }
+    .planet[data-planet="uranus"] { width: 70px !important; }
+    .sun img { width: 100px !important; }
+
+}

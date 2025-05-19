@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Солнечная система</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="solar">
+      <div class="orbit orbit--1">
+         <img src="/images/neptune.png" width="60"  alt="Нептун" data-planet="neptune" class="planet"> 
+          <div class="orbit orbit--2">
+             <img src="/images/uranus.png" width="130"  alt="Уран" data-planet="uranus" class="planet">
+              <div class="orbit orbit--3">
+                 <img src="/images/saturn.png" width="150" alt="Сатурн" data-planet="saturn" class="planet">
+                  <div class="orbit orbit--4">
+                     <img src="/images/jupiter.png" width="70"  alt="Юпитер"  data-planet="jupiter" class="planet">
+                      <div class="orbit orbit--5">
+                         <img src="/images/mars.png" width="35"  alt="Марс" data-planet="mars" class="planet">
+                          <div class="orbit orbit--6">
+                             <img src="/images/earth.png" alt="Земля" width="40"  data-planet="earth" class="planet">
+                              <div class="orbit orbit--7">
+                                 <img src="/images/venus.png" width="38"  data-planet="venera" alt="Венера" class="planet">
+                                  <div class="orbit orbit--8">
+                                      <img src="/images/mercury.png" width="30px" data-planet="mercury"  alt="Меркурий" class="planet"> 
+                                        <div  >
+                                             <img class="sun" src="/images/sun.png" width="180px" data-planet="sun" alt="Солнце">
+                                        </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+       </div> 
+   </div>
+   
+    <div id="sun" class="card hidden" >
+        <button class="x">X</button>
+        <p class="card-name">Солнце </p>
+        <div class="info">
+            <img src="images/sun-photo.png" width="200"/>
+            <p>
+  <strong>Центральная звезда</strong> нашей планетарной системы. 
+  Оно представляет собой <strong>плазменный шар</strong>, 
+  состоящий в основном из <strong>водорода (92%)</strong> 
+  и <strong>гелия (7%)</strong>.
+            </p>
+        </div>
+      </div> 
+    <div id="mercury" class="card hidden" >
+        <button class="x">X</button>
+        <p class="card-name">Меркурий </p> 
+        <img src="images/mercury-photo.png" width="200"/>
+        <p>
+          <strong>Ближайшая к Солнцу</strong> планета. На Меркурии <strong>не бывает времен года</strong>.<br>
+          Он вращается вокруг своей оси <strong>очень медленно</strong>, совершая один оборот за <strong>58 земных суток</strong>.<br>
+          Из-за <strong>близости Солнца</strong> на его поверхности <strong>невероятный перепад температуры</strong>:<br>
+          от <strong>+420 градусов</strong> днём до <strong>-180 градусов</strong> ночью.
+        </p>
+    </div>
+    <div id="venera" class="card hidden">
+        <button class="x">X</button>
+        <p class="card-name">Венера </p>
+        <div class="info">
+            <img src="images/venus-photo.png" width="200"/>
+            <p>
+  <strong>Ближайшая к Земле</strong> планета. Венера <strong>чуть меньше Земли</strong>.<br>
+  Вращается вокруг своей оси <strong>против часовой стрелки</strong>.<br>
+  <strong>День и ночь</strong> там длятся <strong>почти 59 земных суток</strong>.<br>
+  <strong>Времен года</strong> на Венере <strong>нет</strong>.<br>
+  Температура: <strong>+464 градусов</strong>.
+</p>
+        </div>
+      </div>    
+    <div id="earth" class="card hidden">
+        <button class="x">X</button>
+        <p class="card-name">Земля </p>
+        <div class="info">
+            <img src="images/earth-photo.png" width="200"/>
+            <p>
+  <strong>Самая большая</strong> из четырёх планет земной группы, её <strong>диаметр равен 12 756 км</strong>.<br>
+  Земля отличается от других планет тем, что окружена <strong>воздушной оболочкой</strong>.<br>
+  <strong>Всё тепло</strong> наша планета получает <strong>от Солнца</strong>.
+</p>
+        </div>    
+    </div>
+    <div id="mars" class="card hidden" >
+        <button class="x">X</button>
+        <p class="card-name">Марс </p>
+        <div class="info">
+            <img src="images/mars-photo.png" width="200"/>
+            <p>
+  Вращается вокруг своей оси за <strong>24 часа 39 минут</strong>.<br>
+  На Марсе существует <strong>вода в виде льда</strong>.<br>
+  Своим <strong>красным цветом</strong> Марс обязан <strong>бурым камням</strong> и <strong>желтоватой пыли</strong>.
+</p>
+         </div>
+      </div>
+    <div id="jupiter" class="card hidden">
+        <button class="x">X</button>
+        <p class="card-name">Юпитер </p>
+        <div class="info">
+            <img src="images/jupiter-photo.jpg" width="200"/>
+            <p>
+  <strong>Самая крупная</strong> из планет–гигантов.<br>
+  <strong>Самая быстро вращающаяся</strong> вокруг своей оси планета - успевает обернуться вокруг своей оси всего за <strong>10 часов</strong>.<br>
+  <strong>Солнечные лучи не проникают</strong> вглубь атмосферы.
+</p>
+        </div>    
+    </div>
+    <div id="saturn" class="card hidden" >
+        <button class="x">X</button>
+        <p class="card-name">Сатурн </p>
+        <div class="info">
+            <img src="images/saturn-photo.png" width="200"/>
+            <p>
+  <strong>Вторая по размерам планета</strong> – гигант, которая имеет <strong>ярко-выраженные кольца</strong>.<br>
+  Вращается <strong>очень быстро</strong>, совершая один оборот всего за <strong>10 часов 34 минут</strong>.<br>
+  Температура: <strong>–140 градусов</strong>.
+</p>
+        </div>    
+    </div>
+    <div id="uranus" class="card hidden">
+        <button class="x">X</button>
+        <p class="card-name">Уран </p>
+        <div class="info">
+            <img src="images/uranus-photo.png" width="200"/>
+            <p>
+              <strong>Самая голубая</strong> и <strong>самая холодная</strong> планета.<br>
+              Вокруг своей оси Уран вращается <strong>против часовой стрелки</strong>.<br>
+              Причиной цвета планеты является <strong>суровый мороз</strong> в верхних слоях атмосферы.<br>
+              Температура: <strong>-224 градуса</strong>.
+            </p>
+        </div>    
+    </div>
+    <div id="neptune" class="card hidden" >
+        <button class="x">X</button>
+        <p class="card-name">Нептун </p>
+        <div class="info">
+            <img src="images/neptune-photo.jpg" width="200"/>
+            <p>
+              Четвёртый и <strong>последний газовый гигант</strong> в планетной системе Солнца.<br>
+              Совершает один оборот вокруг своей оси за <strong>16 часов 3 минуты</strong>.<br>
+              <strong>Самая ветреная планета</strong> Солнечной системы.<br>
+              Температура: <strong>–200 градусов</strong>.
+            </p>
+        </div>    
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
